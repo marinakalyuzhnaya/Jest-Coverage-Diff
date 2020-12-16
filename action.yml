@@ -11,6 +11,9 @@ inputs:
   runCommand:
     description: 'custom command to get json-summary'
     default: 'npx jest --coverage --coverageReporters="json-summary" --coverageDirectory="./"'
+  coverageFile:
+    description: 'custom coverage file destination'
+    default: 'coverage-summary.json'
 branding:
   color: red
   icon: git-pull-request
